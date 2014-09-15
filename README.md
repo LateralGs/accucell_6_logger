@@ -15,11 +15,13 @@ Requirements
 - Turnigy Accucell 6 or compatible models
   - [hobbyking product link](http://hobbyking.com/hobbyking/store/__18066__Turnigy_Accucel_6_50W_6A_Balancer_Charger_w_Accessories_US_Warehouse_.html)
 
+<!--
 Optional Requirements
 ---------------------
 
 - Matplotlib (for plot_log.py)
    - http://matplotlib.org/
+-->
 
 Hardware Notes
 --------------
