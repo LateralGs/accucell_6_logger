@@ -13,7 +13,7 @@ Requirements
 - USB to serial adaptor (ftdi or similar)
   - See note below about voltage levels.
 - Turnigy Accucell 6 or compatible models
-  - http://hobbyking.com/hobbyking/store/__18066__Turnigy_Accucel_6_50W_6A_Balancer_Charger_w_Accessories_US_Warehouse_.html
+  - [hobbyking product link](http://hobbyking.com/hobbyking/store/__18066__Turnigy_Accucel_6_50W_6A_Balancer_Charger_w_Accessories_US_Warehouse_.html)
 
 Optional Requirements
 ---------------------
@@ -33,7 +33,7 @@ The charger outputs a 5v ttl serial signal on the usb/temp port.  On some older 
 
 Note: this is looking at the end panel with the power connector on the left.
 
-#### Connecting usb-serial adaptor:
+#### Connecting the usb-serial adaptor:
 
 If you use a 3.3v usb serial adaptor you will want to place a resistor in series with the tx line.  A value between 1k and 10k should be fine.
 
@@ -66,11 +66,11 @@ optional arguments:
   --verbose, -v  more output columns
 ~~~
 
-In normal mode the script will output csv data which can be piped to a file.  The verbose flag outputs extra columns of data in adition to the basic set.  Debug mode outputs the input frames along with the python dictionary holding the csv data.
+In default mode the script will output csv data which can be piped to a file.  The verbose flag outputs extra columns of data in adition to the default set.  Debug mode outputs the raw input frames along with the python dictionary holding the csv data.
 
 To exit type control-c in the terminal.
 
-Example:
+Example (linux):
 
 ~~~
 $ python accucell_log.py /dev/ttyUSB0 | tee log_file.csv
