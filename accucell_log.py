@@ -30,7 +30,7 @@ from __future__ import print_function
 import sys, time, serial, argparse
 
 parser = argparse.ArgumentParser(description="Serial data logger for Turnigy Accucell 6 battery charger")
-parser.add_argument("port")
+parser.add_argument("port", help="Serial port/path")
 parser.add_argument("--debug", action="store_true", help="debug output instead of csv")
 parser.add_argument("--verbose", "-v", action="store_true", help="more output columns")
 args = parser.parse_args()
